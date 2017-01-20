@@ -265,7 +265,7 @@ LOCAL int openssl_thread_LWIP_CONNECTION(TLS_IO_INSTANCE* p)
             if (ret == -1) {
                 ret = lwip_net_errno(sock);
                 (void*)printf("lwip_net_errno ret: %d \n", ret);
-                if (ret != EINPROGRESS){
+                if (ret != 115){ // EINPROGRESS
                     result = __LINE__;
                     ret = -1;
                     close(sock);
@@ -274,7 +274,7 @@ LOCAL int openssl_thread_LWIP_CONNECTION(TLS_IO_INSTANCE* p)
                 }
             }
 
-            if(ret != -1 || ret == EINPROGRESS)
+            if(ret != -1 || ret == 115)
             {
                 //(void*)printf("ret: %d \n", ret);
                 // LogInfo("socket connect OK");
@@ -341,10 +341,9 @@ LOCAL int openssl_thread_LWIP_CONNECTION(TLS_IO_INSTANCE* p)
                         else
                         {
                             // LogInfo("SSL set fd");
-                            // returns 1 on success
                             ret = SSL_set_fd(ssl, sock);
-                            //(void*)printf("SSL_set_fd ret:%d \n", ret);
-                            if (ret != 1){
+                            (void*)printf("SSL_set_fd ret:%d \n", ret);
+                            if (ret != 0){
                                 result = __LINE__;
                                 LogError("SSL_set_fd failed");
                             }
