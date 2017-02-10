@@ -188,6 +188,8 @@ LOCAL void mbed_ssl_deinit(struct mbed_ssl *mbed_ssl)
 	mbedtls_x509_crt_free(&ssl_verify->own_crt);
 	mbedtls_pk_free(&ssl_verify->pk);
 
+	mbedtls_net_free(&ssl_fd->fd);
+	mbedtls_net_free(&ssl_fd->cl_fd);
 	mbedtls_entropy_free(&ssl_fd->entropy);
 	mbedtls_ctr_drbg_free(&ssl_fd->ctr_drbg);
 	mbedtls_ssl_config_free(&ssl_fd->conf);
@@ -325,6 +327,7 @@ int ssl_connect(SSL *ssl)
 
 	ssl_fd = mbed_ssl->ssl_fd;
 	while((ret = mbedtls_ssl_handshake(&ssl_fd->ssl)) != 0) {
+		MBED_SSL_DEBUG(1, " handshake ret: %d\n", ret);
 		if (ret != MBEDTLS_ERR_SSL_WANT_READ && ret != MBEDTLS_ERR_SSL_WANT_WRITE) {
 			HANDLE_ERR(-2, go_failed2, "mbedtls_ssl_handshake:[-0x%x]\n", -ret);
 		}
@@ -465,4 +468,5 @@ int ssl_get_verify_result(SSL *ssl)
 {
 	return 0;
 }
+
 
