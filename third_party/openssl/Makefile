@@ -40,7 +40,6 @@ endif
 #
 
 INCLUDES := $(INCLUDES) -I $(PDIR)include
-INCLUDES += -I ./inlcude
 INCLUDES += -I $(SDK_PATH)/include/openssl
 INCLUDES += -I ./
 PDIR := ../$(PDIR)

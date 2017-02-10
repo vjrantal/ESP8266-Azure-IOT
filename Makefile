@@ -200,7 +200,8 @@ CCFLAGS += 			\
 	-mlongcalls	\
 	-mtext-section-literals \
 	-ffunction-sections \
-	-fdata-sections
+	-fdata-sections	\
+	-fno-builtin-printf
 #	-Wall			
 
 CFLAGS = $(CCFLAGS) $(DEFINES) $(EXTRA_CCFLAGS) $(INCLUDES)
