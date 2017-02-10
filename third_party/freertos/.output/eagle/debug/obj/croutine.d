@@ -1,0 +1,35 @@
+.output/eagle/debug/obj/croutine.o .output/eagle/debug/obj/croutine.d : croutine.c \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/FreeRTOS.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/4.8.5/include/stddef.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/projdefs.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/FreeRTOSConfig.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/portable.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/portmacro.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/espressif/c_types.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/4.8.5/include/stdint.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/xtensa-lx106-elf/include/stdint.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/xtensa-lx106-elf/include/_ansi.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/xtensa-lx106-elf/include/newlib.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/xtensa-lx106-elf/include/sys/config.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/xtensa-lx106-elf/include/machine/ieeefp.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/xtensa-lx106-elf/include/sys/features.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/config/core-isa.h \
+ /home/vjrantal/Software/esp-open-sdk/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/4.8.5/include/stdbool.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/espressif/esp_libc.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/espressif/esp8266/ets_sys.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/xtruntime.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/config/core.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/hal.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/config/core-matmap.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/config/tie.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/config/specreg.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/corebits.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/xtensa_rtos.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/config/system.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/extra_include/xtensa/simcall.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/xtensa_context.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/xtensa_timer.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/mpu_wrappers.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/task.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/list.h \
+ /home/vjrantal/Software/ESP8266-Azure-IOT/include/freertos/croutine.h
